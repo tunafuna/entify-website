@@ -1,0 +1,115 @@
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+.button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  height: var(--size-primitive-48);
+  padding: var(--size-primitive-16) var(--space-md);
+  font-family: var(--font-family-body);
+  font-weight: var(--text-body-m-weight);
+  font-size: var(--text-body-m-size);
+  line-height: var(--text-body-m-line-height);
+  white-space: nowrap;
+  transition: background-color 100ms ease, border-color 100ms ease, color 100ms ease;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+/* ── Shapes ────────────────────────────────────────────────────────────────── */
+.sharp {
+  border-radius: var(--radius-sharp);
+}
+
+.soft {
+  border-radius: var(--radius-soft);
+}
+
+.round {
+  border-radius: var(--radius-circle);
+  width: var(--size-primitive-48);
+  height: var(--size-primitive-48);
+  padding: var(--size-primitive-16);
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-title-m-size);
+  line-height: var(--text-title-m-line-height);
+}
+
+/* Round Size L */
+.sizeL {
+  width: var(--size-primitive-64);
+  height: var(--size-primitive-64);
+  font-size: var(--text-title-l-size);
+  line-height: var(--text-title-l-line-height);
+}
+
+/* ── Usage: Brand ──────────────────────────────────────────────────────────── */
+.brand {
+  background-color: var(--color-background-brand);
+  color: var(--color-content-primary);
+}
+
+.brand:hover:not(:disabled) {
+  background-color: var(--color-background-brand-hover);
+}
+
+.brand:active:not(:disabled) {
+  background-color: var(--color-background-brand-active);
+}
+
+.brand:disabled {
+  background-color: var(--color-background-brand-disabled);
+  color: var(--color-content-tertiary);
+}
+
+/* ── Usage: Primary ────────────────────────────────────────────────────────── */
+.primary {
+  background-color: var(--color-background-primary);
+  color: var(--color-content-primary);
+  border: 1px solid var(--color-border-primary);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--color-background-primary-hover);
+  border-color: var(--color-border-primary-hover);
+}
+
+.primary:active:not(:disabled) {
+  background-color: var(--color-background-primary-active);
+  border-color: var(--color-border-primary-active);
+}
+
+.primary:disabled {
+  background-color: var(--color-background-primary-disabled);
+  color: var(--color-content-disabled);
+  border-color: var(--color-border-primary-disabled);
+}
+
+/* ── Usage: Negative ───────────────────────────────────────────────────────── */
+.negative {
+  background-color: var(--color-background-primary);
+  color: var(--color-content-negative);
+  border: 1px solid var(--color-border-primary);
+}
+
+.negative:hover:not(:disabled) {
+  background-color: var(--color-background-primary-hover);
+  border-color: var(--color-border-primary-hover);
+}
+
+.negative:active:not(:disabled) {
+  background-color: var(--color-background-primary-active);
+  border-color: var(--color-border-primary-active);
+}
+
+.negative:disabled {
+  background-color: var(--color-background-primary-disabled);
+  color: var(--color-content-disabled);
+  border-color: var(--color-border-primary-disabled);
+}

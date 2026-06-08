@@ -1,0 +1,22 @@
+/* Figma dimensions: Logo+text = 144×48px, Logo = 36.724×41.662px, Favicon = 14.327×16px */
+
+.full {
+  width: 144px;
+  height: 48px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.mark {
+  width: 37px;
+  height: 42px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.favicon {
+  width: 15px;
+  height: 16px;
+  display: block;
+  flex-shrink: 0;
+}
