@@ -2,6 +2,7 @@
   "name": "entify-design-system",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "storybook": "storybook dev -p 6006",
